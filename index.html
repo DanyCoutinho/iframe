@@ -28,11 +28,22 @@
     <h1>Conteúdo local no iframe</h1>
 
     <iframe class="local" src="paginas-extras/imagens.html" frameborder="0">
-        <p>Conteúdo não disponível</p>
+        <p class="iframeerror">Conteúdo não disponível</p>
     </iframe>
 
     <iframe class="local" src="paginas-extras/tabelas.html" frameborder="0">
-        <p>Conteúdo não disponível</p>
+        <p class="iframeerror">Conteúdo não disponível</p>
+    </iframe>
+
+    <h1>Navegação no iframe</h1>
+
+    <ul>
+        <li><a href="paginas-extras/imagens.html" target="frame">Imagens</a></li>
+        <li><a href="paginas-extras/tabelas.html" target="frame">Tabelas</a></li>
+    </ul>
+    <!--Criando conteúdo estático direto no iframe-->
+    <iframe srcdoc=" <h1>Escolha uma das opções a cima</h1> " frameborder="0" name="frame" class="link">
+
     </iframe>
 </body>
 </html>
