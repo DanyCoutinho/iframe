@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/tabelas.css">
+    <title>Tabelas</title>
+</head>
+<body>
+    <h1>Tabela pequena</h1>
+    <!--
+        Hierarquia de tabelas (simples)
+        table = tabela
+            table row = linha da tabela
+                table header = cabeçalho da tabela
+                table data = dado de tabela
+    -->
+        <table id="st">
+            <tr class="line">
+                <td>A1</td>
+                <td colspan="2">B1</td>
+            </tr>
+            <tr>
+                <td>A2</td>
+                <td class="dado">B2</td>
+                <td>C2</td>
+            </tr>
+            <tr>
+                <td rowspan="2">A3</td>
+                <td>B3</td>
+                <td>C3</td>
+            </tr>
+            <tr>
+                <td>B4</td>
+                <td>C4</td>
+            </tr>
+        </table>
+
+    <h1>Tabela grande</h1>
+    <!--
+        Anatomia para tabelas grandes
+        Table
+        Caption
+            Head
+                tr, td, th
+            tbody
+                tr, td, th
+            tfoot
+                tr, td, th
+    -->
+    <table id="bt">
+        <caption>População das Unidades Federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td>45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td>21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>17 254 543</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td>45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td>21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>17 254 543</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td>45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td>21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>17 254 543</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total</th>
+                <td><strong>70 000 000</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <h1>Desafio das tabelas</h1>
+
+    <h2>Desafio 1</h2>
+
+    <table id="desafio1">
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td rowspan="2">3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+        </tr>
+        <tr>
+            <td colspan="3">8</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <td rowspan="2">10</td>
+            <td colspan="2">11</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td>13</td>
+            <td>14</td>
+            <td>15</td>
+        </tr>
+    </table>
+
+    <h2>Desafio 2</h2>
+
+    <table id="desafio2">
+        <tr>
+            <td colspan="4" class="rectangulo">A</td>
+            <td rowspan="4" class="rectangulo">B</td>
+        </tr>
+        <tr>
+            <td rowspan="4" class="rectangulo">C</td>
+            <td class="quadrado">D</td>
+            <td class="quadrado">E</td>
+            <td class="quadrado">F</td>
+        </tr>
+        <tr>
+            <td class="quadrado">G</td>
+            <td class="quadrado">H</td>
+            <td class="quadrado">I</td>
+        </tr>
+        <tr>
+            <td class="quadrado">J</td>
+            <td class="quadrado">L</td>
+            <td class="quadrado">M</td>
+        </tr>
+        <tr>
+            <td colspan="4" class="rectangulo">N</td>
+        </tr>
+    </table>
+
+    <h2>Desafio 3</h2>
+
+    <table id="desafio3">
+        <caption>Filmes Favoritos</caption>
+        <thead>
+            <tr>
+                <th scope="col">Grupo</th>
+                <th scope="col">Nomes</th>
+                <th colspan="3" scope="colgroup">Filmes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="3" scope="rowgroup">Mulheres</th>
+                <td>Ana Maria Santos</td>
+                <td>Alien</td>
+                <td>Rambo</td>
+                <td>Vingadores</td>
+            </tr>
+            <tr>
+                <td>Beatriz Souza</td>
+                <td>Hulk</td>
+                <td>Inception</td>
+                <td>Batman</td>
+            </tr>
+            <tr>
+                <td>Cláudia Melo</td>
+                <td>Oblivion</td>
+                <td>Matrix</td>
+                <td>Big Hero</td>
+            </tr>
+            <tr>
+                <th rowspan="3" scope="rowgroup">Homens</th>
+                <td>Bruno Mendonça</td>
+                <td>Intocáveis</td>
+                <td>Amnésia</td>
+                <td>Gladiador</td>
+            </tr>
+            <tr>
+                <td>Daniel Lourenço</td>
+                <td>Wall-E</td>
+                <td>Oldboy</td>
+                <td>Dangal</td>
+            </tr>
+            <tr>
+                <td>Fabiano Mota</td>
+                <td>Star Wars 5</td>
+                <td>Taxi Driver</td>
+                <td>Toy Story</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Desafio 4</h2>
+
+    <table id="desafio4">
+        <thead>
+            <tr>
+                <th rowspan="2" scope="col">Área</th>
+                <th rowspan="2" scope="col">Disciplinas</th>
+                <th colspan="2" scope="colgroup">Notas</th>
+                <th rowspan="2" scope="col">Média</th>
+            </tr>
+            <tr>
+                <th scope="col">Notas 1</th>
+                <th scope="col">Notas 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="4" scope="rowgroup">Exatas</th>
+                <td>Matemática</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td>Física</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td>Química</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td>Biologia</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr class="media">
+                <th colspan="4" scope="row">Média de Exatas</th>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <th rowspan="2" scope="rowgroup">Humanas</th>
+                <td>História</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td>Geografias</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr class="media">
+                <th colspan="4" scope="row">Média de Humanas</th>
+                <td>0.0</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>ColGroup</h2>
+
+    <table id="desafio5">
+        <colgroup>
+            <col class="col1">
+            <col class="col2">
+            <col class="col3" span="2">
+        </colgroup>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Sexo</th>
+                <th>Idade</th>
+                <th>Profissão</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Ana Maria</td>
+                <td>F</td>
+                <td>25</td>
+                <td>Jornalista</td>
+            </tr>
+            <tr>
+                <td>Cláudio</td>
+                <td>M</td>
+                <td>28</td>
+                <td>Programador</td>
+            </tr>
+            <tr>
+                <td>Gustavo</td>
+                <td>M</td>
+                <td>42</td>
+                <td>Professor</td>
+            </tr>
+            <tr>
+                <td>Hélio</td>
+                <td>M</td>
+                <td>19</td>
+                <td>Vendedor</td>
+            </tr>
+            <tr>
+                <td>Maria</td>
+                <td>F</td>
+                <td>39</td>
+                <td>Médica</td>
+            </tr>
+            <tr>
+                <td>Otávio</td>
+                <td>M</td>
+                <td>22</td>
+                <td>Nutricionista</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h1>Tabelas em telas pequenas</h1>
+
+    <div id="container">
+        <table id="responsive">
+            <caption>Tabela Responsiva</caption>
+            <thead>
+                <tr>
+                    <th>Produto</th>
+                    <th>Jan</th>
+                    <th>Fev</th>
+                    <th>Mar</th>
+                    <th>Abr</th>
+                    <th>Mai</th>
+                    <th>Jun</th>
+                    <th>Jul</th>
+                    <th>Ago</th>
+                    <th>Set</th>
+                    <th>Out</th>
+                    <th>Nov</th>
+                    <th>Dez</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>TV 40''</td>
+                    <td>01</td>
+                    <td>04</td>
+                    <td>07</td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>10</td>
+                    <td>05</td>
+                    <td>02</td>
+                    <td>01</td>
+                    <td>01</td>
+                    <td>04</td>
+                    <td>16</td>
+                </tr>
+                <tr>
+                    <td>Home Theater</td>
+                    <td>01</td>
+                    <td>04</td>
+                    <td>07</td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>10</td>
+                    <td>05</td>
+                    <td>02</td>
+                    <td>01</td>
+                    <td>01</td>
+                    <td>04</td>
+                    <td>16</td>
+                </tr>
+                <tr>
+                    <td>Samsung Galaxy S20</td>
+                    <td>01</td>
+                    <td>04</td>
+                    <td>07</td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>10</td>
+                    <td>05</td>
+                    <td>02</td>
+                    <td>01</td>
+                    <td>01</td>
+                    <td>04</td>
+                    <td>16</td>
+                </tr>
+                <tr>
+                    <td>iPad Mini</td>
+                    <td>01</td>
+                    <td>04</td>
+                    <td>07</td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>10</td>
+                    <td>05</td>
+                    <td>02</td>
+                    <td>01</td>
+                    <td>01</td>
+                    <td>04</td>
+                    <td>16</td>
+                </tr>
+                <tr>
+                    <td>PlayStation 4</td>
+                    <td>01</td>
+                    <td>04</td>
+                    <td>07</td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>10</td>
+                    <td>05</td>
+                    <td>02</td>
+                    <td>01</td>
+                    <td>01</td>
+                    <td>04</td>
+                    <td>16</td>
+                </tr>
+                <tr>
+                    <td>Lava Louças</td>
+                    <td>01</td>
+                    <td>04</td>
+                    <td>07</td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>10</td>
+                    <td>05</td>
+                    <td>02</td>
+                    <td>01</td>
+                    <td>01</td>
+                    <td>04</td>
+                    <td>16</td>
+                </tr>
+                <tr>
+                    <td>Amazon Echo</td>
+                    <td>01</td>
+                    <td>04</td>
+                    <td>07</td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>10</td>
+                    <td>05</td>
+                    <td>02</td>
+                    <td>01</td>
+                    <td>01</td>
+                    <td>04</td>
+                    <td>16</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui at adipisci delectus inventore beatae rerum voluptas placeat sed dicta veritatis deserunt eius, numquam ab quidem quibusdam error aspernatur aliquam impedit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic minus suscipit itaque dignissimos nihil dolorum praesentium. Quaerat, quisquam quae. Exercitationem maiores obcaecati porro tempora accusamus provident quidem. Unde, ducimus voluptate! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit sit libero, qui adipisci ipsum doloremque voluptatibus non officia quia! Commodi dolorem ipsa nemo harum quo quam obcaecati vitae. Neque, exercitationem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam ut accusantium sed architecto, atque dolorem, provident laborum sequi minus, quia velit iure blanditiis suscipit! Repellendus veniam voluptas tempore voluptatibus neque?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui at adipisci delectus inventore beatae rerum voluptas placeat sed dicta veritatis deserunt eius, numquam ab quidem quibusdam error aspernatur aliquam impedit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic minus suscipit itaque dignissimos nihil dolorum praesentium. Quaerat, quisquam quae. Exercitationem maiores obcaecati porro tempora accusamus provident quidem. Unde, ducimus voluptate! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit sit libero, qui adipisci ipsum doloremque voluptatibus non officia quia! Commodi dolorem ipsa nemo harum quo quam obcaecati vitae. Neque, exercitationem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam ut accusantium sed architecto, atque dolorem, provident laborum sequi minus, quia velit iure blanditiis suscipit! Repellendus veniam voluptas tempore voluptatibus neque?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui at adipisci delectus inventore beatae rerum voluptas placeat sed dicta veritatis deserunt eius, numquam ab quidem quibusdam error aspernatur aliquam impedit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic minus suscipit itaque dignissimos nihil dolorum praesentium. Quaerat, quisquam quae. Exercitationem maiores obcaecati porro tempora accusamus provident quidem. Unde, ducimus voluptate! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit sit libero, qui adipisci ipsum doloremque voluptatibus non officia quia! Commodi dolorem ipsa nemo harum quo quam obcaecati vitae. Neque, exercitationem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam ut accusantium sed architecto, atque dolorem, provident laborum sequi minus, quia velit iure blanditiis suscipit! Repellendus veniam voluptas tempore voluptatibus neque?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui at adipisci delectus inventore beatae rerum voluptas placeat sed dicta veritatis deserunt eius, numquam ab quidem quibusdam error aspernatur aliquam impedit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic minus suscipit itaque dignissimos nihil dolorum praesentium. Quaerat, quisquam quae. Exercitationem maiores obcaecati porro tempora accusamus provident quidem. Unde, ducimus voluptate! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit sit libero, qui adipisci ipsum doloremque voluptatibus non officia quia! Commodi dolorem ipsa nemo harum quo quam obcaecati vitae. Neque, exercitationem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam ut accusantium sed architecto, atque dolorem, provident laborum sequi minus, quia velit iure blanditiis suscipit! Repellendus veniam voluptas tempore voluptatibus neque?</p>
+</body>
+</html>
