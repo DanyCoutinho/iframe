@@ -42,8 +42,20 @@
         <li><a href="paginas-extras/tabelas.html" target="frame">Tabelas</a></li>
     </ul>
     <!--Criando conteúdo estático direto no iframe-->
+    <h2>Iframe com conteúdo estático</h2>
     <iframe srcdoc=" <h1>Escolha uma das opções a cima</h1> " frameborder="0" name="frame" class="link">
-
+        <p>Se você etá a ver esse comentário é porque o iframe não está funcionando</p>
     </iframe>
+
+    <h1>Tornando iframes mais seguros</h1>
+    <p>sandbox="sandbox" segurança no máximo.</p>
+    <p>referrerpolicy="no-referrer" isto diz que o que estiver dentro o iframe não vai coletar nenhum dado do usuário</p>
+    <iframe class="seguro" src="paginas-extras/imagens.html" sandbox="sandbox" referrerpolicy="no-referrer-when-downgrade">
+        <p>Segurança dos iframes funciona, mas o iframe não</p>
+    </iframe>
+
+    <h2>Script em iframe</h2>
+
+    <iframe src="paginas-extras/script.html" referrerpolicy="no-referrer" sandbox="allow-scripts"></iframe>
 </body>
 </html>
